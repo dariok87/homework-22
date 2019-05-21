@@ -35,16 +35,14 @@ h1 {
 }
 
 .search_results img {
-	/* Layout */
     display: flex;
     flex-direction: row;
     align-content: center;
     width: 50%;
     height: 50%;
-
-	/* Style */
 	border: 5px solid blue;
-	border-radius: 5px;
+    border-radius: 5px;
+    margin-top: 7px;
 }
 
 .search_button, .search_results {
