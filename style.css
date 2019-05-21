@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+}
+
+html {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-image: url("https://www.arizonapetvet.com/blog/wp-content/uploads/2019/03/little-cats.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header_title {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 60px;
+    color: white;
+    
+}
+
+h1 {
+    text-shadow: 4px 0 0 blue;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.search_button {
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.btn {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    height: 80px;
+    width: 210px;
+    font-size: 40px;
+    cursor: pointer;
+    border: 5px solid blue;
+}
+
+.btn:hover {
+    background-color: gray;
+}
+
+@media(max-width: 750px) {
+    
+    .btn {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        height: 40px;
+        width: 110px;
+        font-size: 25px;
+        border: 1px solid blue;
+        cursor: pointer;
+    }
+    
+    .header_title {
+        display: flex;
+        justify-content: flex-start;
+        text-align: center;
+        font-size: 35px;
+        color: white;
+    }
+
+    html {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-image: url("https://www.arizonapetvet.com/blog/wp-content/uploads/2019/03/little-cats.jpg");
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+
+}
