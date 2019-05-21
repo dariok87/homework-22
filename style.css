@@ -7,10 +7,8 @@ html {
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
-    background-image: url("https://www.arizonapetvet.com/blog/wp-content/uploads/2019/03/little-cats.jpg");
+    background: url("https://www.arizonapetvet.com/blog/wp-content/uploads/2019/03/little-cats.jpg") center center fixed no-repeat;
     height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
 }
 
@@ -29,9 +27,30 @@ h1 {
     margin-left: 20px;
 }
 
-.search_button {
+.search {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.search_results img {
+	/* Layout */
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    width: 50%;
+    height: 50%;
+
+	/* Style */
+	border: 5px solid blue;
+	border-radius: 5px;
+}
+
+.search_button, .search_results {
     margin-top: 30px;
     margin-left: 20px;
+    max-width: 600px;
 }
 
 .btn {
@@ -49,7 +68,7 @@ h1 {
     background-color: gray;
 }
 
-@media(max-width: 750px) {
+@media only screen and (max-width: 750px) {
     
     .btn {
         display: flex;
@@ -82,5 +101,9 @@ h1 {
         background-size: cover;
     }
 
-
+    .search_button, .search_results {
+        margin-top: 30px;
+        margin-left: 20px;
+        max-width: 300px;
+    }
 }
